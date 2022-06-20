@@ -5,7 +5,7 @@ public class Radio {
     private int maxRadioStation = 9;
     private int minRadioStation = 0;
     private int currentRadioStation;
-    private int maxVolume = 10;
+    private int maxVolume = 100;
     private int minVolume = 0;
     private int currentVolume;
     private boolean on;
@@ -24,12 +24,24 @@ public class Radio {
         this.currentVolume = currentVolume;
     }
 
-    public Radio () {
+    // Конструкторы
+
+    public Radio() {
+
     }
 
     public Radio(int maxRadioStation) {
-        setMaxRadioStation(maxRadioStation);
-    } // добавила конструктор
+        this.maxRadioStation = maxRadioStation;
+    }
+
+
+    public Radio(int currentRadioStation, int maxRadioStation) {
+        this.maxRadioStation = maxRadioStation;
+        this.currentRadioStation = currentRadioStation;
+
+    }
+
+    // Конструкторы
 
     public String getName () {
         return name;
