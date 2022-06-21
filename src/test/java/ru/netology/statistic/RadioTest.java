@@ -45,7 +45,7 @@ public class RadioTest {
     @Test
     public void afterInitialRadioStation() {
         Radio radio = new Radio (10, 0, 5, 100, 0, 5);
-        assertEquals(10, radio.getMaxRadioStation());
+        assertEquals(9, radio.getMaxRadioStation());
     }
 
     @Test
